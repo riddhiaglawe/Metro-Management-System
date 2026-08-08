@@ -8,20 +8,21 @@ The system provides passengers with an easy-to-use interface for searching metro
 
 ## 🌐 Live Demo
 
-👉 **[Visit Nagpur Metro Management System](https://metro-management-system.onrender.com/)**
+👉 **[Visit Metro Management System](https://metro-management-system.onrender.com/)**
 
 ---
 
-### 📱 Scan to Open the Live Website
+### 📱 Scan to Open the Live Application
 
 <p align="center">
-  <img src="static/images/qr_metro.png" alt="Nagpur Metro Live Website QR Code" width="220">
+  <img src="static/images/qr_metro.png"
+       alt="Nagpur Metro Live Website QR Code"
+       width="220">
 </p>
 
 <p align="center">
   <b>Scan the QR code to open the live application.</b>
 </p>
-
 ---
 
 ## 📌 Project Overview
