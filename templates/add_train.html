@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Add Train</h2>
+
+<form method="POST">
+
+<input
+class="form-control mb-3"
+name="train_number"
+placeholder="Train Number"
+required>
+
+<input
+class="form-control mb-3"
+name="train_name"
+placeholder="Train Name"
+required>
+
+<select
+class="form-select mb-3"
+name="line_id">
+
+{% for line in lines %}
+
+<option
+value="{{ line.line_id }}">
+
+{{ line.line_name }}
+
+</option>
+
+{% endfor %}
+
+</select>
+
+<button
+class="btn btn-success">
+
+Add Train
+
+</button>
+
+</form>
+
+{% endblock %}

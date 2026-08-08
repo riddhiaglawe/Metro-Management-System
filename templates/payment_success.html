@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container py-5">
+
+<div class="row justify-content-center">
+
+<div class="col-lg-7">
+
+<div class="card shadow-lg border-0 rounded-4">
+
+<div class="card-body p-5 text-center">
+
+<div class="mb-4">
+
+<h1 class="display-1 text-success">
+
+✅
+
+</h1>
+
+</div>
+
+<h2 class="fw-bold text-success">
+
+Payment Successful
+
+</h2>
+
+<p class="text-muted">
+
+Your Nagpur Metro recharge has been completed successfully.
+
+</p>
+
+<hr>
+
+<div class="row text-start">
+
+<div class="col-6">
+
+<h6>Transaction ID</h6>
+
+</div>
+
+<div class="col-6 text-end">
+
+<b>{{ transaction_id }}</b>
+
+</div>
+
+<div class="col-6 mt-3">
+
+<h6>Date</h6>
+
+</div>
+
+<div class="col-6 mt-3 text-end">
+
+<b>{{ payment_date }}</b>
+
+</div>
+
+<div class="col-6 mt-3">
+
+<h6>Time</h6>
+
+</div>
+
+<div class="col-6 mt-3 text-end">
+
+<b>{{ payment_time }}</b>
+
+</div>
+
+<div class="col-6 mt-3">
+
+<h6>Status</h6>
+
+</div>
+
+<div class="col-6 mt-3 text-end">
+
+<span class="badge bg-success">
+
+SUCCESS
+
+</span>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="d-grid gap-3">
+
+<button
+
+class="btn btn-primary btn-lg"
+
+onclick="window.print()">
+
+🖨 Print Receipt
+
+</button>
+
+<a
+
+href="/offers"
+
+class="btn btn-warning btn-lg">
+
+💳 Recharge Again
+
+</a>
+
+<a
+
+href="/"
+
+class="btn btn-success btn-lg">
+
+🏠 Back to Home
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}

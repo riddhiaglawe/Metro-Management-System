@@ -1,0 +1,423 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- ================= HERO SLIDER ================= -->
+
+<div id="metroCarousel" class="carousel slide carousel-fade mb-5" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+
+        <button type="button" data-bs-target="#metroCarousel" data-bs-slide-to="0" class="active"></button>
+
+        <button type="button" data-bs-target="#metroCarousel" data-bs-slide-to="1"></button>
+
+        <button type="button" data-bs-target="#metroCarousel" data-bs-slide-to="2"></button>
+
+        <button type="button" data-bs-target="#metroCarousel" data-bs-slide-to="3"></button>
+
+    </div>
+
+    <div class="carousel-inner rounded-4 shadow-lg">
+
+        <!-- Slide 1 -->
+
+        <div class="carousel-item active">
+
+            <img src="{{ url_for('static', filename='images/metro1.jpg') }}"
+                 class="d-block w-100"
+                 style="height:600px;object-fit:cover;">
+
+            <div class="carousel-caption">
+
+                <h1 class="display-4 fw-bold">
+
+                    Welcome to Nagpur Metro
+
+                </h1>
+
+                <p class="lead">
+
+                    Smart • Safe • Sustainable Travel
+
+                </p>
+
+                <a href="/login"
+                   class="btn btn-warning btn-lg">
+
+                    🚇 Plan Journey
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Slide 2 -->
+
+        <div class="carousel-item">
+
+            <img src="{{ url_for('static', filename='images/metro2.jpg') }}"
+                 class="d-block w-100"
+                 style="height:600px;object-fit:cover;">
+
+            <div class="carousel-caption">
+
+                <h1>
+
+                    Explore the Orange & Aqua Lines
+
+                </h1>
+
+                <p>
+
+                    Travel comfortably across Nagpur.
+
+                </p>
+
+                <a href="/route_map"
+                   class="btn btn-primary">
+
+                    🗺 View Route Map
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Slide 3 -->
+
+        <div class="carousel-item">
+
+            <img src="{{ url_for('static', filename='images/metro3.jpg') }}"
+                 class="d-block w-100"
+                 style="height:600px;object-fit:cover;">
+
+            <div class="carousel-caption">
+
+                <h1>
+
+                    Calculate Your Metro Fare
+
+                </h1>
+
+                <p>
+
+                    Quick and accurate fare calculation.
+
+                </p>
+
+                <a href="/fare_calculator"
+                   class="btn btn-success">
+
+                    💰 Fare Calculator
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Slide 4 -->
+
+        <div class="carousel-item">
+
+            <img src="{{ url_for('static', filename='images/metro4.jpg') }}"
+                 class="d-block w-100"
+                 style="height:600px;object-fit:cover;">
+
+            <div class="carousel-caption">
+
+                <h1>
+
+                    Recharge Smart Card
+
+                </h1>
+
+                <p>
+
+                    Recharge anytime with exciting offers.
+
+                </p>
+
+                <a href="/offers"
+                   class="btn btn-info">
+
+                    💳 Recharge Now
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#metroCarousel"
+            data-bs-slide="prev">
+
+        <span class="carousel-control-prev-icon"></span>
+
+    </button>
+
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#metroCarousel"
+            data-bs-slide="next">
+
+        <span class="carousel-control-next-icon"></span>
+
+    </button>
+
+</div>
+
+<!-- ================= SERVICES ================= -->
+
+<section class="container my-5">
+
+    <h2 class="text-center fw-bold mb-5">
+
+        Our Services
+
+    </h2>
+
+    <div class="row g-4">
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card shadow h-100 text-center p-4">
+
+                <h1>🗺</h1>
+
+                <h4>Route Map</h4>
+
+                <p>
+
+                    Explore all Orange & Aqua Line stations.
+
+                </p>
+
+                <a href="/route_map"
+                   class="btn btn-outline-primary">
+
+                    View Map
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card shadow h-100 text-center p-4">
+
+                <h1>💰</h1>
+
+                <h4>Fare Calculator</h4>
+
+                <p>
+
+                    Calculate fare and travel time.
+
+                </p>
+
+                <a href="/fare_calculator"
+                   class="btn btn-outline-success">
+
+                    Calculate
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card shadow h-100 text-center p-4">
+
+                <h1>💳</h1>
+
+                <h4>Recharge</h4>
+
+                <p>
+
+                    Recharge your Smart Metro Card.
+
+                </p>
+
+                <a href="/offers"
+                   class="btn btn-outline-warning">
+
+                    Recharge
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+
+            <div class="card shadow h-100 text-center p-4">
+
+                <h1>🎫</h1>
+
+                <h4>Book Ticket</h4>
+
+                <p>
+
+                    Login and book metro tickets online.
+
+                </p>
+
+                <a href="/login"
+                   class="btn btn-outline-danger">
+
+                    Book Now
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= WHY CHOOSE ================= -->
+
+<section class="container my-5">
+
+    <h2 class="text-center fw-bold mb-5">
+
+        Why Choose Nagpur Metro?
+
+    </h2>
+
+    <div class="row text-center">
+
+        <div class="col-md-3">
+
+            <div class="card p-4 shadow">
+
+                <h1>🚇</h1>
+
+                <h4>Fast Travel</h4>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card p-4 shadow">
+
+                <h1>💳</h1>
+
+                <h4>Cashless Payment</h4>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card p-4 shadow">
+
+                <h1>🛡</h1>
+
+                <h4>Safe Journey</h4>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <div class="card p-4 shadow">
+
+                <h1>🌱</h1>
+
+                <h4>Eco Friendly</h4>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= ROUTE MAP PREVIEW ================= -->
+
+<section class="container my-5">
+
+    <h2 class="text-center fw-bold mb-4">
+
+        Official Nagpur Metro Route Map
+
+    </h2>
+
+    <div class="card shadow-lg">
+
+        <div class="card-body text-center">
+
+            <img src="{{ url_for('static', filename='images/nagpur_route_map.png') }}"
+                 class="img-fluid rounded">
+
+            <br><br>
+
+            <a href="/route_map"
+               class="btn btn-primary btn-lg">
+
+                View Full Route Map
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-dark text-white mt-5">
+
+    <div class="container py-4 text-center">
+
+        <h3>
+
+            🚇 Nagpur Metro Rail Corporation Limited
+
+        </h3>
+
+        <p>
+
+            📍 Nagpur, Maharashtra
+
+        </p>
+
+        <p>
+
+            ☎ Customer Care: 1800-266-7181
+
+        </p>
+
+        <p>
+
+            © 2026 Nagpur Metro Management System
+
+        </p>
+
+    </div>
+
+</footer>
+
+{% endblock %}

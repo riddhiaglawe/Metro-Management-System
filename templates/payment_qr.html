@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container py-5">
+
+<div class="row justify-content-center">
+
+<div class="col-lg-7">
+
+<div class="card shadow-lg border-0 rounded-4">
+
+<div class="card-header bg-primary text-white text-center">
+
+<h2>
+
+🚇 Nagpur Metro Payment
+
+</h2>
+
+</div>
+
+<div class="card-body">
+
+<div class="text-center mb-4">
+
+<h4>
+
+{{ booking.train }}
+
+</h4>
+
+<p>
+
+<b>From:</b> {{ booking.source }}
+
+</p>
+
+<p>
+
+<b>To:</b> {{ booking.destination }}
+
+</p>
+
+<p>
+
+<b>Journey Date:</b>
+
+{{ booking.journey_date }}
+
+</p>
+
+<h2 class="text-success">
+
+Fare ₹ {{ booking.fare }}
+
+</h2>
+
+</div>
+
+<hr>
+
+<div class="text-center">
+
+<h4>
+
+Scan QR Code to Pay
+
+</h4>
+
+<img
+
+src="{{ url_for('static', filename='images/payment_qr.png') }}"
+
+width="250"
+
+class="img-fluid shadow rounded">
+
+<p class="mt-3 text-muted">
+
+Use any UPI App
+
+(Google Pay / PhonePe / Paytm / BHIM)
+
+</p>
+
+</div>
+
+<hr>
+
+<div class="text-center">
+
+<h4>
+
+Payment Expires In
+
+</h4>
+
+<h2
+
+id="timer"
+
+class="text-danger">
+
+05:00
+
+</h2>
+
+</div>
+
+<div class="d-grid gap-3 mt-4">
+
+<a
+
+href="/confirm_payment"
+
+class="btn btn-success btn-lg">
+
+✅ I HAVE PAID
+
+</a>
+
+<a
+
+href="/passenger_dashboard"
+
+class="btn btn-outline-danger">
+
+❌ Cancel Payment
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+let time=300;
+
+let timer=document.getElementById("timer");
+
+setInterval(function(){
+
+let minutes=Math.floor(time/60);
+
+let seconds=time%60;
+
+timer.innerHTML=
+
+String(minutes).padStart(2,"0")+":"+
+
+String(seconds).padStart(2,"0");
+
+if(time>0){
+
+time--;
+
+}
+
+},1000);
+
+</script>
+
+{% endblock %}
