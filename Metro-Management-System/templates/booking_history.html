@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>My Bookings</h2>
+
+<table class="table table-bordered">
+
+<tr>
+
+<th>ID</th>
+
+<th>Train</th>
+
+<th>Source</th>
+
+<th>Destination</th>
+
+<th>Date</th>
+
+<th>Fare</th>
+
+<th>Status</th>
+
+<th>Ticket</th>
+
+</tr>
+
+{% for booking in bookings %}
+
+<tr>
+
+<td>{{ booking.booking_id }}</td>
+
+<td>{{ booking.train_number }}</td>
+
+<td>{{ booking.source_station }}</td>
+
+<td>{{ booking.destination_station }}</td>
+
+<td>{{ booking.journey_date }}</td>
+
+<td>₹ {{ booking.fare }}</td>
+
+<td>{{ booking.booking_status }}</td>
+
+<td>
+
+<a
+href="/ticket/{{ booking.booking_id }}"
+class="btn btn-success btn-sm">
+
+View Ticket
+
+</a>
+
+</td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+<a
+href="/passenger_dashboard"
+class="btn btn-secondary">
+
+Back
+
+</a>
+
+{% endblock %}

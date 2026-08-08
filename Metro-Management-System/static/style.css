@@ -1,0 +1,350 @@
+/* ==========================
+   Nagpur Metro Theme
+========================== */
+
+body{
+
+    background:#f5f7fb;
+
+    font-family:'Segoe UI',sans-serif;
+
+}
+
+
+/* ==========================
+   Navbar
+========================== */
+
+.navbar{
+
+    background:#062b55 !important;
+
+    padding:15px;
+
+}
+
+.navbar-brand{
+
+    font-size:28px;
+
+    font-weight:bold;
+
+}
+
+.nav-link{
+
+    color:white !important;
+
+    margin-left:12px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:#ff9f1c !important;
+
+}
+
+
+/* ==========================
+   Hero Section
+========================== */
+
+.hero{
+
+    padding:80px 0;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+    font-weight:700;
+
+    color:#062b55;
+
+}
+
+.hero p{
+
+    font-size:22px;
+
+    color:#555;
+
+}
+
+.hero img{
+
+    animation:float 3s infinite ease-in-out;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+
+/* ==========================
+   Buttons
+========================== */
+
+.btn-warning{
+
+    background:#ff9f1c;
+
+    border:none;
+
+}
+
+.btn-warning:hover{
+
+    background:#f77f00;
+
+}
+
+.btn-primary{
+
+    background:#0d6efd;
+
+}
+
+.btn-success{
+
+    border-radius:30px;
+
+}
+
+
+/* ==========================
+   Cards
+========================== */
+
+.card{
+
+    border:none;
+
+    border-radius:25px;
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0px 10px 30px rgba(0,0,0,.15);
+
+}
+
+
+/* ==========================
+   Fare Calculator
+========================== */
+
+.card-header{
+
+    border-radius:25px 25px 0 0 !important;
+
+}
+
+.form-select{
+
+    border-radius:18px;
+
+    height:60px;
+
+    font-size:18px;
+
+}
+
+.form-control{
+
+    border-radius:18px;
+
+}
+
+.rounded-circle{
+
+    width:60px;
+
+    height:60px;
+
+    font-size:28px;
+
+}
+
+.btn-dark{
+
+    background:#444b68;
+
+    border:none;
+
+    border-radius:30px;
+
+}
+
+
+/* ==========================
+   Result Cards
+========================== */
+
+.result-card{
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.result-card h1{
+
+    font-size:45px;
+
+}
+
+.result-card h2{
+
+    font-weight:bold;
+
+}
+
+
+/* ==========================
+   Footer
+========================== */
+
+footer{
+
+    margin-top:80px;
+
+    padding:30px;
+
+    background:#062b55;
+
+    color:white;
+
+}
+
+
+/* ==========================
+   Route Map
+========================== */
+
+.route-map{
+
+    border-radius:25px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.15);
+
+}
+
+
+/* ==========================
+   Service Cards
+========================== */
+
+.service-card{
+
+    border-radius:20px;
+
+    padding:25px;
+
+    background:white;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+/* ==========================
+   Responsive
+========================== */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+.hero{
+
+text-align:center;
+
+}
+
+}
+/* ==========================
+   Carousel
+========================== */
+
+.carousel-caption{
+
+    bottom:120px;
+
+    background:rgba(0,0,0,.45);
+
+    padding:30px;
+
+    border-radius:20px;
+
+}
+
+.carousel-caption h1{
+
+    font-weight:bold;
+
+    color:white;
+
+}
+
+.carousel-caption p{
+
+    color:white;
+
+}
+
+.carousel-item img{
+
+    border-radius:25px;
+
+}

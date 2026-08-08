@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h2>Add Schedule</h2>
+
+<form method="POST">
+
+<select
+class="form-select mb-3"
+name="train_id">
+
+{% for train in trains %}
+
+<option value="{{ train.train_id }}">
+
+{{ train.train_number }}
+
+</option>
+
+{% endfor %}
+
+</select>
+
+<select
+class="form-select mb-3"
+name="station_id">
+
+{% for station in stations %}
+
+<option value="{{ station.station_id }}">
+
+{{ station.station_name }}
+
+</option>
+
+{% endfor %}
+
+</select>
+
+<input
+type="time"
+class="form-control mb-3"
+name="arrival_time"
+required>
+
+<input
+type="time"
+class="form-control mb-3"
+name="departure_time"
+required>
+
+<button class="btn btn-success">
+
+Add Schedule
+
+</button>
+
+</form>
+
+{% endblock %}
