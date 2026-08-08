@@ -15,7 +15,7 @@ The system provides passengers with an easy-to-use interface for searching metro
 ### 📱 Scan to Open the Live Website
 
 <p align="center">
-  <img src="static/images/qr-metro.png" alt="Nagpur Metro Live Website QR Code" width="220">
+  <img src="static/images/qr_metro.png" alt="Nagpur Metro Live Website QR Code" width="220">
 </p>
 
 <p align="center">
